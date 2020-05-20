@@ -11,7 +11,7 @@ public class retangulo {
 		Locale.setDefault(Locale.US); // idioma US
 		Scanner sc = new Scanner(System.in); // leitura de dados
 		
-		double LARG, ALT;
+		double LARG,ALT;
 		
 		//Leitura da largura
 		System.out.print("Digite a largura do retangulo: ");
@@ -21,6 +21,16 @@ public class retangulo {
 		while (LARG < 0) {
 			System.out.print("O valor deve ser positivo. Tente novamente: ");
 			LARG = sc.nextDouble();
+		}
+		
+		//Leitura da altura
+		System.out.print("Digite a largura do retangulo: ");
+		ALT = sc.nextDouble();
+		
+		//Validação altura
+		while (ALT < 0) {
+			System.out.print("O valor deve ser positivo. Tente novamente: ");
+			ALT = sc.nextDouble();
 		}
 		
 		sc.close();
